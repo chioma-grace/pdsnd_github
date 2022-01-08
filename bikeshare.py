@@ -3,9 +3,7 @@ import pandas as pd
 import numpy as np
 import json
 
-CITY_DATA = { 'chicago': 'chicago.csv',
-              'new york city': 'new_york_city.csv',
-              'washington': 'washington.csv' }
+CITY_DATA = { 'chicago': 'chicago.csv', 'new york city': 'new_york_city.csv', 'washington': 'washington.csv' }
 
 MONTHS = ['january', 'feburary', 'march', 'april', 'may', 'june']
 
@@ -41,7 +39,7 @@ def get_filters():
         user_month_selection = input("Please choose your peferred day of the week from (all, monday, tuesday, ... sunday):").lower()
 
 
-    print('-'*40)
+    print('-' * 40)
     return city, user_month_selection, user_day_selection
 
 
@@ -100,7 +98,7 @@ def time_stats(df):
     print('Most Popular Start Hour:', popular_start_hour)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-' * 40)
 
 
 def station_stats(df):
@@ -122,7 +120,7 @@ def station_stats(df):
     print('Most Popular Start and End Station:', popular_start_station_and_end_station)
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-' * 40)
 
 
 def trip_duration_stats(df):
@@ -141,7 +139,7 @@ def trip_duration_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-' * 40)
 
 
 def user_stats(df):
@@ -175,7 +173,7 @@ def user_stats(df):
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    print('-' * 40)
 
 def display_data(df):
     """Displays raw bikeshare data upon request"""
